@@ -1,6 +1,6 @@
 import React from "react";
 
-function Settings() {
+function Header() {
   return (
     <>
       <div className="block">
@@ -52,4 +52,4 @@ function Settings() {
   );
 }
 
-export default Settings;
+export default Header;

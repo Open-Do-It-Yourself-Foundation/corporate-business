@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/header";
 
-function index() {
+function LandingPage() {
   return (
     <div className="main-container">
       <Header />
@@ -9,4 +9,4 @@ function index() {
   );
 }
 
-export default index;
+export default LandingPage;
