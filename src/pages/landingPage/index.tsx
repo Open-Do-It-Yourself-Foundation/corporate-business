@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../components/header";
 import Menu from "../../components/menu";
 import Stats from "../../components/stats";
+import LineChart from "../../components/LineChart";
 
 function LandingPage() {
   return (
@@ -13,6 +14,9 @@ function LandingPage() {
         <Menu />
         <div className="donut-chart-block block">
           <Stats />
+        </div>
+        <div className="line-chart-block block clear">
+          <LineChart />
         </div>
       </div>
     </div>
