@@ -5,6 +5,7 @@ import Stats from "../../components/stats";
 import LineChart from "../../components/LineChart";
 import Media from "../../components/media";
 import SocialLeft from "../../components/socialLeft";
+import Profile from "../../components/profile";
 
 function LandingPage() {
   return (
@@ -22,6 +23,10 @@ function LandingPage() {
         </div>
         <Media />
         <SocialLeft />
+      </div>
+      {/* Middle Container */}
+      <div className="middle-container container">
+        <Profile />
       </div>
     </div>
   );
