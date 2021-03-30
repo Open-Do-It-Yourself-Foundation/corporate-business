@@ -6,6 +6,7 @@ import LineChart from "../../components/LineChart";
 import Media from "../../components/media";
 import SocialLeft from "../../components/socialLeft";
 import Profile from "../../components/profile";
+import WeatherInfo from "../../components/weatherInfo";
 
 function LandingPage() {
   return (
@@ -27,6 +28,7 @@ function LandingPage() {
       {/* Middle Container */}
       <div className="middle-container container">
         <Profile />
+        <WeatherInfo />
       </div>
     </div>
   );
