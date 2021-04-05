@@ -7,6 +7,8 @@ import Media from "../../components/media";
 import SocialLeft from "../../components/socialLeft";
 import Profile from "../../components/profile";
 import WeatherInfo from "../../components/weatherInfo";
+import SocialMiddle from "../../components/socialMiddle";
+
 
 function LandingPage() {
   return (
@@ -29,6 +31,7 @@ function LandingPage() {
       <div className="middle-container container">
         <Profile />
         <WeatherInfo />
+        <SocialMiddle/>
       </div>
     </div>
   );
