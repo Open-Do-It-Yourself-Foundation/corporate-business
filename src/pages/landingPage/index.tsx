@@ -7,6 +7,12 @@ import Media from "../../components/media";
 import SocialLeft from "../../components/socialLeft";
 import Profile from "../../components/profile";
 import WeatherInfo from "../../components/weatherInfo";
+import SocialMiddle from "../../components/socialMiddle";
+import Subscribe from "../../components/subscribe";
+import SignIn from "../../components/signIn";
+import Loading from "../../components/loading";
+import WeekDay from "../../components/weekDay";
+import Month from "../../components/month";
 
 function LandingPage() {
   return (
@@ -29,6 +35,15 @@ function LandingPage() {
       <div className="middle-container container">
         <Profile />
         <WeatherInfo />
+        <SocialMiddle />
+      </div>
+      {/* Right Container */}
+      <div className="right-container container">
+        <Subscribe />
+        <SignIn />
+        <Loading />
+        <WeekDay />
+        <Month />
       </div>
     </div>
   );
