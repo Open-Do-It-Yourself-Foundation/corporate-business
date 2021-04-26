@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../../components/header";
 import Menu from "../../components/menu";
 import Stats from "../../components/stats";
-import LineChart from "../../components/LineChart";
+import LineChart from "../../components/lineChart";
 import Media from "../../components/media";
 import SocialLeft from "../../components/socialLeft";
 import Profile from "../../components/profile";
