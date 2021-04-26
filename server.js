@@ -1,32 +1,12 @@
-const path = require('path');
-const express = require('express');
-const http = require('http');
 const debug = require('debug')('http');
+const http = require('http');
+const app = require('./app');
 
-const app = express();
-const buildPath = path.join(__dirname, 'dist');
-
-app.use(express.static(buildPath));
-app.set('port', process.env.PORT || 8080);
-
-app.use((err, req, res, next) => {
-  if (err instanceof HttpError) {
-    res.status(err.httpStatus);
-    if (err.body) {
-      return res.json(err.body);
-    }
-    return res.send({ error: err.message });
-  }
-  res.sendStatus(500);
-});
-
-app.use('*', (req, res) => {
-  res.sendFile(path.join(`${buildPath}/index.html`));
-});
+const port = parseInt(process.env.PORT, 10) || process.env.API_PORT;
+app.set('port', port);
 
 const server = http.createServer(app);
 
-const port = app.get('port');
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
