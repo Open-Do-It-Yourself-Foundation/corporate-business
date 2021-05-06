@@ -3,8 +3,8 @@ import React from "react";
 function Header() {
   return (
     <>
-      <div className="block">
-        <ul className="header-menu horizontal-list">
+      <div className="block header-menu">
+        <ul className=" horizontal-list">
           <li>
             <a className="header-menu-tab" href="#1">
               <span className="icon entypo-cog scnd-font-color"></span>Settings
@@ -31,6 +31,7 @@ function Header() {
               Favorites
             </a>
           </li>
+          
         </ul>
         <div className="profile-menu">
           <p>
